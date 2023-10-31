@@ -1,0 +1,4 @@
+<div class="wrapper">
+    <view-product [products]="products" (deletedProduct)="deleteOneProduct($event)" (editProduct)="editProduct($event)"></view-product>
+    <add-product (addProduct)="addProduct($event)" ></add-product>
+</div>

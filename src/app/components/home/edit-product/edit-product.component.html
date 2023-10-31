@@ -1,0 +1,21 @@
+<form id="formulario" (ngSubmit)="onSubmit()">
+    <h4>Modificar tarea</h4>
+    <div class="form-group">
+        <div class="update-product">
+            <label for="description">Descripción</label>
+            <input type="text" id="description" name="description" [value]="productToModify.description" [(ngModel)]="productToModify.description" >
+        </div>
+        <div class="update-product">
+            <label for="price">Precio</label>
+            <input type="number" id="price" name="price" [value]="productToModify.price" [(ngModel)]="productToModify.price">
+        </div>
+        <div class="update-product">
+            <label for="stock">Stock</label>
+            <input type="number" id="stock" name="stock" [value]="productToModify.stock" [(ngModel)]="productToModify.stock">
+        </div>
+        
+        <button class="btn" type="submit" id="save-changes">Guardar cambios</button>
+        <button (click)="closeDialog()" class="btn" id="cancel">Cancelar</button>
+    </div>
+
+</form>

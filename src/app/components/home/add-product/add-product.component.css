@@ -1,0 +1,47 @@
+form{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+    color:black;
+}
+form h3{
+    text-align: center;
+    font-size: 1.4rem; 
+    position: relative;
+    top: 1rem;
+}
+
+.form-group{
+    padding: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.add-product label{
+    display: block;
+    font-weight: bold;
+}
+.add-product input{
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    padding: 0.8rem;
+}
+
+.btn{
+    border:none;
+    color: white;
+    background-color: rgb(89, 89, 88);
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 0.8rem;
+    width: 100%;
+    cursor:pointer;
+    border-radius: .25rem .688rem;
+
+}

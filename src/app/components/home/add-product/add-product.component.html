@@ -1,0 +1,25 @@
+<form id="formulario" (ngSubmit)="onSubmit()">
+    <h3>Agregar Tarea</h3>
+    <div class="form-group">
+        <div class="add-product">
+            <label for="description">Descripción</label>
+            <input type="text" [(ngModel)]="product.description"  name="description" placeholder="Ingresá la descripción del producto"
+                required>
+        </div>
+        <div class="add-product">
+            <label for="price">Precio</label>
+            <input type="number" [(ngModel)]="product.price" name="description" placeholder="Ingresá el precio" required>
+        </div>
+        <div class="add-product">
+            <label for="stock">Stock</label>
+            <input type="number" [(ngModel)]="product.stock" name="stock" required>
+        </div>
+
+
+        <div>
+            <button type="submit" class="btn" >Crear Producto</button>
+
+        </div>
+    </div>
+
+</form>
